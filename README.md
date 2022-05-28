@@ -162,6 +162,7 @@ I have used this Dataset->cars
 ## How to use the web application?
 
 >Click on this link :- [Information & Visualization](https://cars-engage-2022.herokuapp.com/information)
+
 The above link directs to the an interface where you can check the following information about the dataset :- 
 - The number of rows and columns.
 - The datatype of each columns.
@@ -171,6 +172,7 @@ The above link directs to the an interface where you can check the following inf
 - Box plots,bar plots and scatter plots between different columns ,so as to understand their relation.
 
 >Click on this link :- [Customer Segmentation](https://cars-engage-2022.herokuapp.com/optimalK)
+
 The above link directs to the an interface where you can check the following information :-
 - The head of the dataframe after scaling Displacement and Ex-Showroom Price.
 - Elbow Plot(used to find the optimal value of k).
