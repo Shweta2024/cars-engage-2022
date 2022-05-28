@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarsEngage2022</title>
+    <script src="https://rawgit.com/moment/moment2.2.1/min/moment.min.js"></script>
+    <script src="https://cdn.jsdeliver.net/npm/chart.js@2.9.3/dist/chart.min.js"></script>
+</head>
+<body>
+        <style>
+        table, th, td {
+          border: 1px solid white;
+          border-collapse: collapse;
+          border-style:solid;
+          border-color: black;
+        }
+        th, td {
+          background-color: #96D4D4;
+        }
+        </style>
+
+    <!-- Info function -->
+    <h1 style="background-color:DodgerBlue;color: white;text-align:center;font-size:270%">INFORMATION ABOUT THE DATASET</h1>
+    <br>
+    <h3><li>The number of rows and columns in the dataset is :-</li></h3>
+    {{shape}}
+    <br>
+    
+<!--
+    {% for i in dtypes %}
+    <ul>
+        <li>{{i}}</li>
+    </ul>
+    {% endfor %}
+-->
+    <h3><li>The datatypes of each columns in the dataset is :- </li></h3>
+    {{dtypes}}
+    <h3><li>This is the head of the dataset :-</li></h3>
+    {% for table in head %}
+    {{ table|safe }}
+    {% endfor %}
+    <br>
+    <h3><li>This is the tail of the dataset :-</li></h3>
+    {% for table in tail %}
+    {{ table|safe }}
+    {% endfor %}
+    <br>
+    <h3><li>This is the Statistical Results from the dataset :-</li></h3>
+    {% for table in desc %}
+    {{ table|safe }}
+    {% endfor %}
+    <br>
+
+    <h3><li>This is the head of the dataset after deleting columns that has more than 60% missing values :-</li></h3>
+    {% for table in dhead %}
+    {{ table|safe }}
+    {% endfor %}
+    <br>
+    <h3><li>This is the head of the dataset after filling missing values :-</li></h3>
+    {% for table in fhead %}
+    {{ table|safe }}
+    {% endfor %}
+    <br>
+    <h3><li>This is the head of the dummy dataset :-</li></h3>
+    {% for table in dum %}
+    {{ table|safe }}
+    {% endfor %}
+    <br>
+
+    <h2 style="background-color:DodgerBlue;color: white;text-align:center;font-size:270%">VISUALIZATION</h2>
+
+    <form action="{{url_for('plots')}}" method="POST">
+    <h2 style="color:black"><li>Bar Plot</h2></li>
+    <br>
+    <p>Choose a Column to display its barplot</p>
+    <select id="1" name="Column" required="required">
+        <option value="Make">Make</option>
+        <option value="Model">Model</option>
+        <option value="City_Mileage">City_Mileage</option>
+        <option value="ARAI_Certified_Mileage">ARAI_Certified_Mileage</option>
+        <option value="Type">Type</option>
+        <option value="Fuel_Type">Fuel_Type</option>
+        <option value="Body_Type">Body_Type</option>
+    </select>
+    <input type="submit">
+    </form>
+    <img src="{{ a }}" alt="Bar Plot Image">
+
+    <form action="{{url_for('boxPlot')}}" method="POST">
+        <h2 style="color:black"><li>Box Plot</h2></li>
+        <br>
+        <p>Choose a Column to display its Box Plot</p>
+        <select id="2" name="Col" required="required">
+            <option value="Make">Make</option>
+            <option value="Model">Model</option>
+            <option value="City_Mileage">City_Mileage</option>
+            <option value="ARAI_Certified_Mileage">ARAI_Certified_Mileage</option>
+            <option value="Type">Type</option>
+            <option value="Fuel_Type">Fuel_Type</option>
+            <option value="Body_Type">Body_Type</option>
+        </select>
+        <input type="submit">
+        </form>
+        <img src="{{ b }}" alt="Box Plot Image">
+
+
+
+    
+
+    <br>
+    <br>
+    <form action="{{ url_for('barPlot')}}" method="POST">
+        <h2 style="color:black"><li>Box Plot between two colomns</h2></li>
+        <br>
+        <p>Choose the first column</p>
+        <select id="3" name="x" required="required">
+            <option value="Make">Make</option>
+            <option value="Model">Model</option>
+            <option value="Displacement">Displacement</option>
+            <option value="Ex-Showroom_Price">Ex-Showroom_Price</option>
+            <option value="City_Mileage">City_Mileage</option>
+            <option value="ARAI_Certified_Mileage">ARAI_Certified_Mileage</option>
+            <option value="Type">Type</option>
+            <option value="Fuel_Type">Fuel_Type</option>
+            <option value="Body_Type">Body_Type</option>
+            <option value="Seating_Capacity">Seating_Capacity</option>
+            <option value="Average_Fuel_Consumption">Average_Fuel_Consumption</option>on>
+        </select>
+        <input type="submit">
+        
+            <br>
+            <br>
+            <p>Choose the second column</p>
+
+            <select id="4" name="y" required="required">
+                <option value="Make">Make</option>
+                <option value="Model">Model</option>
+                <option value="Displacement">Displacement</option>
+                <option value="Ex-Showroom_Price">Ex-Showroom_Price</option>
+                <option value="City_Mileage">City_Mileage</option>
+                <option value="ARAI_Certified_Mileage">ARAI_Certified_Mileage</option>
+                <option value="Type">Type</option>
+                <option value="Fuel_Type">Fuel_Type</option>
+                <option value="Body_Type">Body_Type</option>
+                <option value="Seating_Capacity">Seating_Capacity</option>
+                <option value="Average_Fuel_Consumption">Average_Fuel_Consumption</option>
+            </select>
+            <input type="submit">
+            <p style="color: red">NOTE : Choose a column other than the previous column</p>
+            </form>
+            <img src="{{ c }}" alt="Bar Plot Image">
+
+
+    
+
+
+            <!--doubt?
+            Ask sir will the same be for scatter plot?-->
+    <br>
+    <br>
+    <form action="{{ url_for('scatterPlot')}}" method="POST">
+        <h2 style="color:black"><li>Scatter Plot</h2></li>
+        <br>
+        <p>Choose the first column</p>
+        <select id="5" name="xAxis" required="required">
+            <option value="Make">Make</option>
+            <option value="Model">Model</option>
+            <option value="Displacement">Displacement</option>
+            <option value="Ex-Showroom_Price">Ex-Showroom_Price</option>
+            <option value="City_Mileage">City_Mileage</option>
+            <option value="ARAI_Certified_Mileage">ARAI_Certified_Mileage</option>
+            <option value="Type">Type</option>
+            <option value="Fuel_Type">Fuel_Type</option>
+            <option value="Body_Type">Body_Type</option>
+            <option value="Seating_Capacity">Seating_Capacity</option>
+            <option value="Average_Fuel_Consumption">Average_Fuel_Consumption</option>
+        </select>
+        <input type="submit">
+
+        <br>
+        <br>
+        <p>Choose the second column</p>
+
+            <select id="6" name="yAxis" required="required">
+                <option value="Make">Make</option>
+                <option value="Model">Model</option>
+                <option value="Displacement">Displacement</option>
+                <option value="Ex-Showroom_Price">Ex-Showroom_Price</option>
+                <option value="City_Mileage">City_Mileage</option>
+                <option value="ARAI_Certified_Mileage">ARAI_Certified_Mileage</option>
+                <option value="Type">Type</option>
+                <option value="Fuel_Type">Fuel_Type</option>
+                <option value="Body_Type">Body_Type</option>
+                <option value="Seating_Capacity">Seating_Capacity</option>
+                <option value="Average_Fuel_Consumption">Average_Fuel_Consumption</option>
+            </select>
+        <input type="submit">
+        <p style="color:red">NOTE : Choose a column other than the previous column</p>
+        </form>
+
+        <img src="{{ d }}" alt="Scatter Plot image">
+
+        <h2 style="background-color:DodgerBlue;color: white;text-align:center;font-size:270%">Customer Segmentation</h2>
+        <p>Below is the head of the dataset after scaling Ex-Showroom_Price and Displacement (between 0 to 1)</p>
+
+        {% for table in scaled %}
+        {{ table|safe }}
+        {% endfor %}
+        <br>
+
+        
+        <h4>Elbow Plot</h4>
+        <img src="{{ e }}" alt="Elbow Plot">
+
+        <h4>K-Means Clustering</h4>
+        <img src="{{ f }}" alt="Customer Segmentation">
+
+        
+</body>
+</html>
