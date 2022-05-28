@@ -1,4 +1,3 @@
-from turtle import color
 import seaborn as sns
 import numpy as np
 import matplotlib.pyplot as plt
@@ -33,7 +32,7 @@ class Visualization:
         Returns : Saves the figure in the sub folder inside the static folder.
         '''
         fig = plt.figure(figsize = (10, 5))
-        plt.scatter(self.data[self.x].head(100),self.data[self.y].head(100),color = 'green')
+        plt.scatter(self.data[self.x].head(100),self.data[self.y].head(100))
         plt.xlabel(self.x)
         plt.ylabel(self.y)
         return plt.savefig("static/sub/scatter2.png")
