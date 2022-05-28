@@ -10,6 +10,7 @@
 * [Objective](#objective)
 * [Why this Project?](#why-this-project)
 * [General Information about the Project](#general-information-about-the-project)
+* [How to use the web application?](#how-to-use-the-web-application)
 * [Technologies Used](https://github.com/Shweta2024/cars-engage-2022/blob/main/requirements.txt)
 * [Features](#features)
 * [Room for Improvement](#room-for-improvement)
@@ -158,6 +159,23 @@ I have used this Dataset->cars
 ![image](https://user-images.githubusercontent.com/75883328/170741261-33c584b7-117d-482f-bb96-7a8201b8d7ec.png)
 
 
+## How to use the web application?
+
+>Click on this link :- [Information & Visualization](https://cars-engage-2022.herokuapp.com/information)
+The above link directs to the an interface where you can check the following information about the dataset :- 
+- The number of rows and columns.
+- The datatype of each columns.
+- The number and percentage of missing values in each columns.
+- Head and tail of the dataframe.
+- Statistical description.
+- Box plots,bar plots and scatter plots between different columns ,so as to understand their relation.
+
+>Click on this link :- [Customer Segmentation](https://cars-engage-2022.herokuapp.com/optimalK)
+The above link directs to the an interface where you can check the following information :-
+- The head of the dataframe after scaling Displacement and Ex-Showroom Price.
+- Elbow Plot(used to find the optimal value of k).
+- Scatter plot between Displacement and Ex-Showroom Price (after using K-means clustering).
+
 
 ## Features
 
@@ -166,9 +184,8 @@ Below are the informations that can be found from my application :-
 - The most popular Car as per their Make , Model,Fuel Type ,Body Type, etc.
 - How exactly the prices vary with the independent variables.
 - Customer segments.
-- The number of rows and columns of dataset.
-- The datatype of each columns of the dataset.
-- The number and percentage of missing values in each columns.
+
+
 
 
 
