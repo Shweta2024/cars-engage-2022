@@ -13,7 +13,9 @@
 * [Technologies Used](https://github.com/Shweta2024/cars-engage-2022/blob/main/requirements.txt)
 * [Features](#features)
 * [Room for Improvement](#room-for-improvement)
+* [Contributing Guidelines](https://github.com/Shweta2024/cars-engage-2022/blob/main/Contributing.md)
 * [Contact](#contact)
+
 
 
 
