@@ -2,7 +2,7 @@
 
 # Data Analysis
 
->To developed an application to demonstrate how the Automotive Industry could harness data to take informed decisions.
+>Developed an application to demonstrate how the Automotive Industry could harness data to take informed decisions.
 
 > Live demo [here]()
 
@@ -22,11 +22,14 @@
 
 # Objective
 
-The ultimate goal of this project is to develop an application that the Automotive Industry could use to harness data to make informed decisions. It helps to find out which is the most popular car on the basis of its engine type, fuel type, mileage, model, etc. It will help them to figure out the trending designs of cars and can use those reports to accordingly manipulate the design of the cars,by making them more optimized, customer-centric, and innovative. It also allows them to find out the relation between different parameters like how exactly the prices vary with the independent variables.And with the help of customer segmentation, they can find which group of people prefers which features.
+- The ultimate goal of this project is to develop an application that the Automotive Industry could use to harness data to make informed decisions. 
+- It helps to find out which is the most popular car **on the basis** of its engine type, fuel type, mileage, model, etc. 
+- It will help them to figure out the trending designs of cars and can use those reports to accordingly **manipulate the design of the cars**,by making them more      **optimized, customer-centric, and innovative**. 
+- It also allows them to **find out the relation between** different parameters like how exactly the prices vary with the independent variables. With the help of **customer segmentation**, they can find which group of people prefers which features.
 
 # Why this Project?
 
-Quick and accurate analysis of data is something that cannot be neglected in the automotive industry. The scale of data that is available to us is huge and it is tedious to find out reports from it manually, also there are chances of making errors while calculating. All these complexities make the traditional quantitative approaches to analysis inappropriate.  This led to the need for the development of this application, with the help of Machine Learning concepts, we can easily find out the variations of one feature with respect to others accurately in a very less time.
+Quick and accurate analysis of data is something that cannot be neglected in the automotive industry. The scale of data that is available to us is huge and it is tedious to find out reports from it manually, also there are chances of making errors while calculating. All these complexities make the traditional quantitative approaches to analysis inappropriate.  This led to the need for the development of this application, with the help of Machine Learning concepts, we can easily **find out the variations of one feature with respect to others accurately in a very less time.**
 
 # General Information about the Project
 
@@ -38,9 +41,9 @@ I have used this Dataset->cars
 
 - Followed by filling the missing values with the mode of the column.
 
-- Then I used bar plots, box plots, and scatter plots to display the relationship between different attributes(features of the cars).
+- Then, **I used plots such as** : bar plots, box plots, and scatter plots to display the relationship between different attributes(features of the cars).
 
-- Followed by using an Elbow plot to find the optimal value of K to apply K-Means Clustering ,so as  to group the people on the basis of the Displacement and the Ex-Showroom Price
+- Followed by using an Elbow plot to find the optimal value of K to apply **K-Means Clustering** ,so as  to group the people on the basis of the Displacement and the Ex-Showroom Price
 
 - Prior to using K-means Clustering, I scaled the values of Displacement and Ex-showroom Price, for making data points generalized so that the distance between them will be lower.
  
@@ -200,15 +203,15 @@ Below are the informations that can be found from my application :-
 
 ## Room for Improvement
 
-- Since the aim of the project was to use data analysis,I have not used any algorithm to predict the price of a car.Although, algorithms like linear regression and  Random Forest Regressor can be used for predicting the price of the car. 
+- Since the aim of the project was to use data analysis,I have not used any algorithm to predict the price of a car.Although, algorithms like **Linear Regression** and  **Random Forest Algorithm** can be used for predicting the price of the car. 
 
 
 
 ## Contact
 
-Created by - [Shweta Bhagat](https://www.linkedin.com/in/shweta-bhagat-5a3969200/)
+😄 Created by - [Shweta Bhagat](https://www.linkedin.com/in/shweta-bhagat-5a3969200/)
 
-Email : bhagatshweta0216@gmail.com 
+📧 Email : bhagatshweta0216@gmail.com
 
 Feel free to contact me!
 
