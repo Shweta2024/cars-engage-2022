@@ -2,7 +2,7 @@
 
 # Data Analysis
 
-Developed an application to demonstrate how the Automotive Industry could harness data to take informed decisions.
+>To developed an application to demonstrate how the Automotive Industry could harness data to take informed decisions.
 
 > Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
 
