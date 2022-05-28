@@ -46,6 +46,13 @@ I have used this Dataset->cars
  
 
 --------------
+
+- The below table shows the statistical summary of the dataframe given dataframe. 
+- It includes count, mean, median (or 50th percentile) standard variation, minimum value,maximum value, and percentile values of columns. 
+
+![statistical-result](https://user-images.githubusercontent.com/75883328/170816874-23d68a19-f346-46a0-8a7f-3f135c2e587e.png)
+
+--------------
  
 - The below Bar Plot represents the top 10 popular Make of Cars.
 - Maruti Suzuki is the most popular Make ,followed by Hyundai ,Mahindra,Tata and so on.
