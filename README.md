@@ -4,7 +4,7 @@
 
 >Developed an application to demonstrate how the Automotive Industry could harness data to take informed decisions.
 
-> Live demo [here]()
+> Live demo [here](https://youtu.be/Hd-9HnHHsNw)
 
 ## Table of Contents
 * [Objective](#objective)
@@ -35,7 +35,7 @@ Quick and accurate analysis of data is something that cannot be neglected in the
 
 This project uses the concept of Data Analysis to demonstrate how the Automotive Industry could harness data to make informed decisions.
 
-I have used this Dataset->cars
+I have used this Dataset->cars(https://github.com/Shweta2024/cars-engage-2022/blob/main/cars.csv)
 
 - Since the given dataset had missing values, I deleted the columns having more than 60% missing values.
 
