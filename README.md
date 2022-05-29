@@ -4,7 +4,7 @@
 
 >Developed an application to demonstrate how the Automotive Industry could harness data to take informed decisions.
 
-> Live demo [here](https://youtu.be/Hd-9HnHHsNw)
+> Live demo [here](https://youtu.be/0lu2atR5Qcg)
 
 ## Table of Contents
 * [Objective](#objective)
